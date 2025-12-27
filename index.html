@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hamza Hachani – Data Engineer</title>
+    <meta name="description"
+        content="Data Engineer à Paris. Projets data, Databricks, dbt, PySpark. Téléchargez mon CV." />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Hamza Hachani – Data Engineer" />
+    <meta property="og:description" content="Projets data, Databricks, dbt, PySpark. Téléchargez mon CV." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://<ton-user>.github.io/" />
+    <meta property="og:image" content="https://<ton-user>.github.io/assets/profile.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xmld’affichage si styles.css ne charge pas */
+    :root { color-scheme: light dark; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif; }
+  </style>
+
+  <!-- JSON-LD (rich snippet Person) -->
+  <script type=" application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Hamza Hachani",
+    "jobTitle":"Data Engineer",
+    "url":"https://<ton-user>.github.io/",
+        "image":"https://<ton-user>.github.io/assets/profile.jpg",
+            "worksFor":{"@type":"Organization","name":""},
+            "address":{"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"},
+            "sameAs":[
+            "https://www.linkedin.com/in/hamza-hachani",
+            "https://github.com/<ton-user>"
+                ]
+                }
+                </script>
+</head>
+
+<body>
+    <header class="wrap">
+        <nav>
+            <a class="brand" hrefass="spacer"></div>
+                <a href="#ojets</a>
+      #contactContact</a>
+      <button id=" theme-toggle" aria-label="Basculer le thème">🌓</button>
+        </nav>
+    </header>
+
+    <main class="wrap hero">
+        <section>
+            <h1>Bonjour, je suis <span class="accent">Hamza</span> — Data Engineer</h1>
+            <p class="lead">
+                J’aime concevoir des pipelines robustes sur Databricks, dbt et PySpark,
+                modéliser en Data Vault 2.0 et industrialiser la qualité des données.
+            </p>
+            <div class="cta">
+                <a class="btn primary" href="/assets/cv_hamza_hachani.pdf" target="_blank" rel="noopenerrojets</a>
+      </div>
+    </section>
+    <figure>
+      <img src=" /assetspg </figure>
+    </main>
+
+    <section id="projets" class="wrap section">
+        <h2>Projets</h2>
+        <ul class="cards">
+            <li>
+                <h3>Modèle Data Vault sur Databricks</h3>
+                <p>Hubs, Links, Satellites (SCD2), incrémental Delta + dbt, contrôle qualité.</p>
+            </li>
+            <li>
+                <h3>Orchestration Airflow + KubernetesExecutor</h3>
+                <p>Jobs idempotents, SLA, retries, alerting, packaging via uv.</p>
+            </li>
+            <li>
+                <h3>Monitoring & DQ</h3>
+                <p>Tests dbt, règles métier, suivi SLA, Time Travel Delta.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="wrap section">
+        <h2>Contact</h2>
+        <p>Ouvert aux opportunités et collaborations.</p>
+        <ul class="links">
+            <li><a href="mailto:contact@hamzahachani.devamzahachani.dev</a></li>
+      <li><a href=" https://www.linkedin.com/in/hamza-hachani" target="_blank"
+                    i>https://github.com/<ton-user>GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer class="wrap footer">
+        <small>© <span id="y"></span> Hamza Hachani. Tous droits réservés.</small>
+    </footer>
+
+    <script>
+        // year
+        document.getElementById('y').textContent = new Date().getFullYear();
+        // dark mode toggle
+        const key = 'pref-theme';
+        const btn = document.getElementById('theme-toggle');
+        const current = localStorage.getItem(key);
+        if (current) document.documentElement.dataset.theme = current;
+        btn.addEventListener('click', () => {
+            const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.dataset.theme = next;
+            localStorage.setItem(key, next);
+        });
+    </script>
+</body>
+
+</html>
